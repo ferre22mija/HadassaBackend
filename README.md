@@ -17,7 +17,6 @@ npm i express bcryptjs cors dotenv jsonwebtoken sequelize mysql2 helmet nodemon
 scripts : {
     "start" : "nodemon src/index.js"
 }
-
 ```
 
 ### instalar babel
@@ -26,15 +25,20 @@ npm i @babel/core @babel/cli @babel/node @babel/preset-env nodemon -D
 
 ### configurar preset
 
-- agregar un archivo .babelrc
-- dar el siguiente babelrc
+- agregar un archivo .babelrc con el siguiente contenido
+```
 {
     "presets":[
         "@babel/preset-env"
     ]
 }
+```
+
 - cambiar packaje.json scripts 
-    "scripts":{
+```
+"scripts":{
         "start": "nodemon src/index.js --exec babel-node",
         "build": "babel src --out-dir build"
     }
+```
+    
