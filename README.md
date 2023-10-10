@@ -1,5 +1,5 @@
 # HadassaBackend
-Bakend de sistema Hadassa, ejecutar npm i para cargar node
+Bakend de sistema Hadassa, ejecutar `npm i` para cargar node
 
 # Configuracion inicial
 
@@ -13,9 +13,9 @@ npm i express bcryptjs cors dotenv jsonwebtoken sequelize mysql2 helmet nodemon
 
 ### modificaciones en package.json
 
-- scripts : {
+`scripts : {
     "start" : "nodemon src/index.js"
-}
+}`
 
 ### instalar babel
 
