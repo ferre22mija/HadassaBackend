@@ -1,5 +1,5 @@
 # HadassaBackend
-Bakend de sistema Hadassa, ejecutar `npm i` para cargar node
+Bakend de sistema Hadassa, ejecutar `npm i` para cargar node y para correr el proyecto con `npm run dev`
 
 # Configuracion inicial
 
@@ -36,9 +36,11 @@ npm i @babel/core @babel/cli @babel/node @babel/preset-env nodemon -D
 
 - cambiar packaje.json scripts 
 ```
-"scripts":{
-        "start": "nodemon src/index.js --exec babel-node",
-        "build": "babel src --out-dir build"
-    }
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start":"node build/index.js",
+    "build": "babel src --out-dir build"
+  }
 ```
     
