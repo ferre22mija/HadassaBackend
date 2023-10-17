@@ -1,0 +1,1 @@
+// datos iniciales que deben ingresar en models/seguridad y models/aplicacion
