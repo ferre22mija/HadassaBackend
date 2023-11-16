@@ -11,8 +11,8 @@ const app = express();
 app.use(morgan('dev')); // muestra en consola las peticiones
 app.use(express.json()); // peticiones en formato json
 app.get('/', (req, res) => {
-  testConnection();
-  // SyncDataBase();
+  // testConnection();
+  SyncDataBase();
   res.json('welcome');
 })
 

@@ -1,11 +1,11 @@
 // connect
 const { Sequelize } = require('sequelize');
-export const db = new Sequelize('sisventas', 'apd4v0gtqzftxtejbjj0', 'pscale_pw_wMiQ2fenpHxLVmunoYDi7e70CWwXsyJf7cTBgrknUeY', {
-  host: 'aws.connect.psdb.cloud',
+export const db = new Sequelize('hadassadb', 'root', '123456', {
+  host: 'localhost',
   dialect: 'mysql',
   port: '3306',
 });
-// export const db = new Sequelize('mysql://apd4v0gtqzftxtejbjj0:pscale_pw_wMiQ2fenpHxLVmunoYDi7e70CWwXsyJf7cTBgrknUeY@aws.connect.psdb.cloud/sisventas?sslaccept=strict')
+// export const db = new Sequelize('mysql://ph1fphgg1th8lfggok86:pscale_pw_wMiQ2fenpHxLVmunoYDi7e70CWwXsyJf7cTBgrknUeY@aws.connect.psdb.cloud/sisventas?ssl={"rejectUnauthorized":false}')
 export const testConnection = async () => {
   try {  
     await db.authenticate();
